@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI</title>
+    
+    <style>
+        body {
+            background-image: url('https://www.shutterstock.com/image-photo/cubes-form-expression-bmi-body-260nw-1544917481.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 110%;
+        }
+h1 {
+            text-align: center;
+            font-size: 45px;
+        }
+h2{
+        text-align: center;
+            font-size: 45px;
+        } 
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    color: #00000;
+    font-size: 20px;
+}
+        /* Your CSS styles here */
+        a {
+            color: white; /* Set the default link color */
+            font-size: 30px;
+            filter: grayscale(80%);
+            transition: .2s linear;
+        }
+
+        a:hover {
+            color: red;
+            filter: grayscale(80%);
+            transition: .2s linear; /* Set the link color when hovered over */
+        }
+
+        .clicked {
+            color: green !important;
+            filter: grayscale(80%);
+            transition: .2s linear; /* Set the link color when clicked */
+        }
+   
+
+    </style>
+</head>
+<body>
+<br>
+<br>
+<div class="navbar">
+<nav style="color: white">
+
+              <ul style="color: black; text-align: center">
+                  <li style="color: white">
+                      <a style="color: white; font-size: 30px" href="C:\Users\Harsha Gowthami\Desktop\UID Assignment2\about2.html">About</a>
+                  </li>
+                  <li>
+                      <a style="color: white; font-size: 30px" href="C:\Users\Harsha Gowthami\Desktop\UID Assignment2\application.html">Application</a>
+                  </li>
+                  <li>
+                      <a style="color:white; font-size: 30px" href="file:///C:\Users\Harsha Gowthami\Desktop\UID Assignment2\BMI.html">Calculator</a>
+                  </li>
+                  <li>
+                      <a style="color:white; font-size: 30px" href="file:///C:/Users/Harsha%20Gowthami/Desktop/UID%20assignment/contact.html">Contact us</a>
+                  </li>
+              </ul>
+          </nav>
+       
+       </div>
+<script>
+    const aboutLink = document.getElementById("aboutLink");
+    const registrationLink = document.getElementById("registrationLink");
+    const contactUsLink = document.getElementById("contactUsLink");
+
+    aboutLink.onclick = function() {
+        aboutLink.classList.add("clicked");
+    };
+
+    registrationLink.onclick = function() {
+        registrationLink.classList.add("clicked");
+    };
+
+    contactUsLink.onclick = function() {
+        contactUsLink.classList.add("clicked");
+    };
+</script>
+</body>
+</html>

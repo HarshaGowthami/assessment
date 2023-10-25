@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            background-image: url('https://cdn1.vectorstock.com/i/1000x1000/12/90/body-mass-index-flat-weight-vector-33561290.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            opacity: 0.5;
+            filter: blur(0.5px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+         .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: e7feff ;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+            font-size: 25px;
+        }
+        
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .success-message {
+           display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .container:target .success-message {
+            display: block;
+        }
+        .funny-image {
+            max-width: 100%;
+        }
+       h2{
+           text-align: center;
+            font-size: 45px;
+        }
+      .btn {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form</h1>
+        <form id="registration-form" onsubmit="showSuccess(event)">
+            <label for="name"><strong>Name:</strong></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age"><strong>AGE:</strong></label>
+            <input type="age" id="age" name="age" required>
+
+
+            <label for="height"><strong>HEIGHT:</strong></label>
+            <input type="height" id="height" name="height" required>
+
+            <label for="weight"><strong>WEIGHT:</strong></label>
+            <input type="weight" id="state" name="weight" required>
+
+            <label for="gender"><strong>Gender:</strong></label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+          
+
+            <button type="submit"><strong>Register</strong></button>
+
+        </form>
+    </div>
+<a href="#" onclick="history.back();" class="btn">Back</a>
+  <a href="assignment.html"></a>
+
+    </body>
+</html>
